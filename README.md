@@ -74,9 +74,11 @@ The first thing you need to know is that a well-formed JSON document is a JSONiq
 This means that you can copy-and-paste any JSON document into a query. The following are JSONiq queries that are "idempotent" (they just output themselves):
 
     { "pi" : 3.14, "sq2" : 1.4 }
-    { "pi" : 3.14, "sq2" : 1.4 }
+    -> { "pi" : 3.14, "sq2" : 1.4 }
+
     [ 2, 3, 5, 7, 11, 13 ]
-    [ 2, 3, 5, 7, 11, 13 ]
+    -> [ 2, 3, 5, 7, 11, 13 ]
+
     {
       "operations" : [
         { "binary" : [ "and", "or"] },
