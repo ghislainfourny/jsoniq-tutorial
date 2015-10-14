@@ -21,6 +21,8 @@ JSONiq is based on XQuery, which is a W3C standard (like XML and HTML). XQuery i
 JSONiq, since it extends XQuery, is a very powerful general-purpose declarative programming language. Our experience is that, for the same task, you will probably write about 80% less code compared to imperative languages like JavaScript, Python or Ruby. Additionally, you get the benefits of strong type checking without actually having to write type declarations.
 Here is an appetizer before we start the tutorial from scratch.
 
+In all examples, the -> indicates the result of the query just above. It is only a convention for this tutorial.
+
     let $stores :=
     [
       { "store number" : 1, "state" : "MA" },
