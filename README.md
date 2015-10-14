@@ -70,8 +70,8 @@ In all examples, the -> indicates the result of the query just above. It is only
 
 ### Actually, you already knew some JSONiq
 
-The first thing you need to know is that, as a rule of thumb, a well-formed JSON document is a JSONiq expression as well.
-This means that, most of the time, you can copy-and-paste a JSON document into a query. The following are JSONiq queries that are "idempotent" (they just output themselves):
+The first thing you need to know is that a well-formed JSON document is a JSONiq expression as well.
+This means that you can copy-and-paste any JSON document into a query. The following are JSONiq queries that are "idempotent" (they just output themselves):
 
     { "pi" : 3.14, "sq2" : 1.4 }
     { "pi" : 3.14, "sq2" : 1.4 }
