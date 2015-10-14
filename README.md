@@ -326,7 +326,7 @@ an object as a set of name/value pairs
 
 ### Objects
 
-You can use an object as if it were a function and pass the call an argument of type xs:string. It will return the value associated thereto:
+You can use the dot operator to retrieve the value associated with a key. Quotes are optional, except if the key has special characters such as spaces. It will return the value associated thereto:
 
     let $person := {
       "first name" : "Sarah",
