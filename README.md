@@ -455,8 +455,9 @@ JSONiq can do way more that what is presented here. Here are a couple of highlig
 - You can define your own functions and modules.
 - JSONiq provides you with loads of available modules shipped with Zorba.
 - JSONiq has tons of further features such as switch, typeswitch and try-catch expressions, universal/existential quantifiers, path expressions, filtering expressions, functors, mappings, grouping, windowing.
-More is not enough
 
-- JSONiq supports XML. Yes: you can manipulate JSON and XML with the same language! JSONiq is actually a superset of XQuery, a W3C standard, and extends its data model to support JSON.
+## More is not enough
+
+- JSONiq supports XML. Yes: you can manipulate JSON and XML with the same language! JSONiq also exists in a different flavour that is a superset of XQuery, a W3C standard. JSONiq extends its data model to support JSON.
 - JSONiq supports scripting. If you need to write a full-fledged, side-effecting Web application, scripting is for you.
 The complete JSONiq specification is available on http://jsoniq.org/
