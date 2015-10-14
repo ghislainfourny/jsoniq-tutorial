@@ -441,8 +441,8 @@ JSONiq supports JSON updates. You can declaratively update your JSON data. JSONi
     copy $people := {
       "John" : { "status" : "single" },
       "Mary" : { "status" : "single" } }
-    modify (replace json value of $people.John.status with "married",
-            replace json value of $people.Mary.status with "married")
+    modify (replace value of json $people.John.status with "married",
+            replace value of json $people.Mary.status with "married")
     return $people
     -> { "John" : { "status" : "married" }, "Mary" : { "status" : "married" } }
 
