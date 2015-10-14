@@ -181,6 +181,7 @@ Until now, we have only been working with single values (an object, an array, a 
     -> 1 true 42 Life
 
 The "to" operator is very convenient, too:
+
     (1 to 100)
     -> 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
     21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
@@ -189,6 +190,7 @@ The "to" operator is very convenient, too:
     81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100
 
 Some functions even work on sequences:
+
     sum(1 to 100)
     -> 5050
 
