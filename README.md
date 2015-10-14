@@ -40,15 +40,15 @@ Here is an appetizer before we start the tutorial from scratch.
        { "product" : "shirt", "store number" : 3, "quantity" : 10 }
     ]
     let $join :=
-      for $store in jn:members($stores), $sale in jn:members($sales)
-      where $store("store number") = $sale("store number")
+      for $store in $stores[], $sale in $sales[]
+      where $store."store number" = $sale."store number"
       return {
-        "nb" : $store("store number"),
-        "state" : $store("state"),
-        "sold" : $sale("product")
+        "nb" : $store."store number",
+        "state" : $store.state,
+        "sold" : $sale.product
       }
     return [$join]
-    [
+    -> [
       { "nb" : 1, "state" : "MA", "sold" : "broiler" },
       { "nb" : 1, "state" : "MA", "sold" : "socks" },
       { "nb" : 2, "state" : "MA", "sold" : "toaster" },
@@ -80,7 +80,7 @@ This means that, most of the time, you can copy-and-paste a JSON document into a
         0, 1
       ]
     }
-    {
+    -> {
       "operations" : [
         { "binary" : [ "and", "or" ] },
         { "unary" : [ "not" ] }
@@ -89,15 +89,16 @@ This means that, most of the time, you can copy-and-paste a JSON document into a
         0, 1
       ]
     }
+
     [ { "Question" : "Ultimate" }, ["Life", "the universe", "and everything"] ]
-    [ { "Question" : "Ultimate" }, [ "Life", "the universe", "and everything" ] ]
+    -> [ { "Question" : "Ultimate" }, [ "Life", "the universe", "and everything" ] ]
 
-This works with objects, arrays (even nested), strings, numbers, booleans, null. The exceptions to this rule (but we are working on it!) are that:
+This works with objects, arrays (even nested), strings, numbers, booleans, null.
 
-1.  empty objects are not recognized and must be written {| |}.
-2.  characters escaped with the \ in JSON strings are not recognized (XQuery uses another means of escaping characters).
 It also works the other way round: if your query outputs an object or an array, you can use it as a JSON document.
-JSONiq is a declarative language. This means that you only need to say what you want - the compiler will take care of the how. In the above queries, you are basically saying: I want to output this JSON content, and here it is.
+JSONiq is a declarative language. This means that you only need to say what you want - the compiler will take care of the how. 
+
+In the above queries, you are basically saying: I want to output this JSON content, and here it is.
 
 ## JSONiq basics
 
@@ -144,9 +145,9 @@ JSONiq supports boolean operations.
     (true or false) and (false or true)
     true
     
-The unary not is a function (yes, JSONiq has functions):
+The unary not is also available:
 
-    not(true)
+    not true
     false
 
 ### Strings
@@ -273,6 +274,7 @@ Now that you know of a couple of elementary JSONiq expressions, you can combine 
     -> [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 
 Or you can dynamically compute the value of object pairs (or their key):
+
     {
       "Greeting" : (let $d := "Mister Spock"
                     return concat("Hello, ", $d)),
@@ -322,7 +324,7 @@ You can use an object as if it were a function and pass the call an argument of 
       "gender" : "female",
       "friends" : [ "Jim", "Mary", "Jennifer"]
     }
-    return $person("first name")
+    return $person."first name"
     -> "Sarah"
 
 You can also ask for all keys in an object:
@@ -333,15 +335,15 @@ You can also ask for all keys in an object:
       "gender" : "female",
       "friends" : [ "Jim", "Mary", "Jennifer"]
     }
-    return { "keys" : [ jn:keys($person)] }
+    return { "keys" : [ keys($person)] }
     -> { "keys" : [ "name", "age", "gender", "friends" ] }
 
 ### Arrays
 
-You can use an array as if it were a function and pass the call an argument of type xs:integer. It will return the entry at that position:
+The [[]] operator retrieves the entry at the given position:
 
     let $friends := [ "Jim", "Mary", "Jennifer"]
-    return $friends(2)
+    return $friends[[1+1]]
     -> Mary
 
 It is also possible to get the size of an array:
@@ -352,10 +354,10 @@ It is also possible to get the size of an array:
       "gender" : "female",
       "friends" : [ "Jim", "Mary", "Jennifer"]
     }
-    return { "how many friends" : jn:size($person("friends")) }
+    return { "how many friends" : size($person.friends)) }
     -> { "how many friends" : 3 }
 
-For convenience, there is a function that returns all elements in an array, as a sequence:
+Finally, the [] operator returns all elements in an array, as a sequence:
 
     let $person := {
       "name" : "Sarah",
@@ -363,7 +365,7 @@ For convenience, there is a function that returns all elements in an array, as a
       "gender" : "female",
       "friends" : [ "Jim", "Mary", "Jennifer"]
     }
-    return jn:members($person("friends"))
+    return $person.friends[]
     -> Jim Mary Jennifer
 
 ### Relational Algebra
@@ -389,12 +391,12 @@ Do you remember SQL's SELECT FROM WHERE statements? JSONiq inherits selection, p
        { "product" : "shirt", "store number" : 3, "quantity" : 10 }
     ]
     let $join :=
-      for $store in jn:members($stores), $sale in jn:members($sales)
-      where $store("store number") = $sale("store number")
+      for $store in $stores[], $sale in $sales[]
+      where $store."store number" = $sale."store number"
       return {
-        "nb" : $store("store number"),
-        "state" : $store("state"),
-        "sold" : $sale("product")
+        "nb" : $store."store number",
+        "state" : $store.state,
+        "sold" : $sale.product
       }
     return [$join]
     -> [
@@ -411,9 +413,9 @@ Do you remember SQL's SELECT FROM WHERE statements? JSONiq inherits selection, p
 
 ### Access external data
 
-Our implementation supports collections of (and indices on) JSON objects or arrays:
+Many implementations support collections of (and indices on) JSON objects or arrays:
 
-    dml:collection("my:data")
+    collection("data")
     -> { "foo" : "Your" }
     { "foo" : "Collection" }
     { "foo" : "of" }
@@ -429,8 +431,8 @@ JSONiq supports JSON updates. You can declaratively update your JSON data. JSONi
     copy $people := {
       "John" : { "status" : "single" },
       "Mary" : { "status" : "single" } }
-    modify (replace json value of $people("John")("status") with "married",
-            replace json value of $people("Mary")("status") with "married")
+    modify (replace json value of $people.John.status with "married",
+            replace json value of $people(.Mary.status with "married")
     return $people
     -> { "John" : { "status" : "married" }, "Mary" : { "status" : "married" } }
 
