@@ -1,11 +1,16 @@
 # JSONiq for JSON users
 This tutorial introduces the JSONiq language, which declaratively manipulates JSON data.
-Why don't you go ahead can try the queries of this document on a local [Zorba](http://zorba.io) installation? You will need to add
+Why don't you go ahead can try the queries of this document on the [Sandbox](http://pilot.zorba.io/)? Alternatively, you can use a local [Zorba](http://zorba.io) installation.
+
+Important comments on the sandbox:
+
+- You will need to add
 
     jsoniq version "1.0";
     
-before each query to tell Zorba that it's a JSONiq query.
+before each query to tell Zorba that it's a JSONiq query. For a local installation, Zorba will recognize .jq files as JSONiq.
 
+- The sandbox is being upgraded to Zorba 3.0 (thank you for bearing with us), but currently runs on a slightly older version, in which not all syntactic features were mature yet. Expect a few discrepancies, but look at the examples on the sandbox page for guidance on them. If you need the latest version, we suggest downloading Zorba 3.0 locally.
 
 ## JSON
 
