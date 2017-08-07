@@ -174,7 +174,7 @@ JSONiq is capable of manipulating strings as well, using functions:
     substring("Mister Spock", 8, 5)
     -> Spock
 
-JSONiq comes up with a rich string function library out of the box, inherited from its base language. These functions are listed here (actually, you will find many more for numbers, etc.)
+JSONiq comes up with a rich string function library out of the box, inherited from its base language. These functions are listed [here](https://www.w3.org/TR/xpath-functions-30/) (actually, you will find many more for numbers, dates, etc).
 
 ### Sequences
 
@@ -464,6 +464,6 @@ JSONiq can do way more that what is presented here. Here are a couple of highlig
 
 ## More is not enough
 
-- JSONiq supports XML. Yes: you can manipulate JSON and XML with the same language! JSONiq also exists in a different flavour that is a superset of XQuery, a W3C standard. JSONiq extends its data model to support JSON.
+- JSONiq supports XML. Yes: you can manipulate JSON and XML with the same language. JSONiq also exists in a different flavour that is a superset of XQuery, a W3C standard. JSONiq extends its data model to support JSON.
 - JSONiq supports scripting. If you need to write a full-fledged, side-effecting Web application, scripting is for you.
 The complete JSONiq specification is available on http://jsoniq.org/
