@@ -136,6 +136,7 @@ will output:
     4
 
 whereas
+
     (38 + 2) div 2 + 11 * 2
 
 will output
@@ -147,21 +148,21 @@ will output
 Like JSON, JSONiq works with decimals and doubles:
 
     6.022e23 * 42
-    2.52924E25
+    -> 2.52924E25
 
 ### Logical operations
 
 JSONiq supports boolean operations.
 
     true and false
-    false
+    -> false
     (true or false) and (false or true)
-    true
+    -> true
     
 The unary not is also available:
 
     not true
-    false
+    -> false
 
 ### Strings
 
@@ -310,16 +311,16 @@ and then merge lots of them into a new object with the {| |} notation:
       return { concat("Square of ", $i) : $i * $i }
     |}
     -> {
-    "Square of 1" : 1,
-    "Square of 2" : 4,
-    "Square of 3" : 9,
-    "Square of 4" : 16,
-    "Square of 5" : 25,
-    "Square of 6" : 36,
-    "Square of 7" : 49,
-    "Square of 8" : 64,
-    "Square of 9" : 81,
-    "Square of 10" : 100
+      "Square of 1" : 1,
+      "Square of 2" : 4,
+      "Square of 3" : 9,
+      "Square of 4" : 16,
+      "Square of 5" : 25,
+      "Square of 6" : 36,
+      "Square of 7" : 49,
+      "Square of 8" : 64,
+      "Square of 9" : 81,
+      "Square of 10" : 100
     }
 
 ## JSON Navigation
