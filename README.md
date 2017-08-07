@@ -10,7 +10,7 @@ Important comments on the sandbox:
     
 before each query to tell Zorba that it's a JSONiq query. For a local installation, Zorba will recognize .jq files as JSONiq.
 
-- The sandbox is being upgraded to Zorba 3.0 (thank you for bearing with us), but currently runs on a slightly older version, in which not all syntactic features were mature yet. Expect a few discrepancies, but look at the examples on the sandbox page for guidance on them. If you need the latest version, we suggest downloading Zorba 3.0 locally.
+- The sandbox is being upgraded to Zorba 3.0 (thank you for bearing with us), but currently runs on a slightly older version, in which not all syntactic features were mature yet. Expect a few discrepancies, but look at the examples on the sandbox page for guidance on them. If you need the latest version, we suggest downloading Zorba 3.0 locally from [here](https://github.com/zorba-processor/zorba/releases/tag/4.0).
 
 ## JSON
 
