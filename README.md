@@ -6,7 +6,7 @@ Important comments on the sandbox:
 
 - You will need to add
 
-    jsoniq version "1.0";
+      jsoniq version "1.0";
     
 before each query to tell Zorba that it's a JSONiq query. For a local installation, Zorba will recognize .jq files as JSONiq.
 
@@ -267,7 +267,7 @@ and even filter out some values:
     
 Note that you can only iterate over sequences, not arrays. To iterate over an array, you can obtain the sequence of its values with the [] operator, like so:
 
-    [1, 2, 3][].
+    [1, 2, 3][]
     -> 1 2 3
 
 ### Conditions
