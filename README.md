@@ -370,7 +370,7 @@ It is also possible to get the size of an array:
       "gender" : "female",
       "friends" : [ "Jim", "Mary", "Jennifer"]
     }
-    return { "how many friends" : size($person.friends)) }
+    return { "how many friends" : size($person.friends) }
     -> { "how many friends" : 3 }
 
 Finally, the [] operator returns all elements in an array, as a sequence:
