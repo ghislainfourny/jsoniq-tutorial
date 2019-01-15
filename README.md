@@ -1,6 +1,6 @@
 # JSONiq for JSON users
 This tutorial introduces the JSONiq language, which declaratively manipulates JSON data.
-Why don't you go ahead and try the queries of this document on the [Sandbox](http://pilot.zorba.io/)? Alternatively, you can use a local [Zorba](http://zorba.io) installation.
+Why don't you go ahead and try the queries of this document on the [Sandbox](http://pilot.zorba.io/)? Alternatively, you can use a local [Zorba](http://zorba.io) installation. Most examples (but not yet the big one in the elevator pitch, which is currently being fixed) also run smoothly on [Sparksoniq](http://sparksoniq.org).
 
 Important comments on the sandbox:
 
