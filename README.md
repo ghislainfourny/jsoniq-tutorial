@@ -2,7 +2,7 @@
 This tutorial introduces the JSONiq language, which declaratively manipulates JSON data.
 You can try the examples on a local [Zorba](http://zorba.io) installation (warning! The online Zorba sandbox is running on an older version, 2.9 and object/array lookup use () rather than . and \[\]).
 
-Most examples (but not yet the big one in the elevator pitch, which is currently being fixed) also run smoothly on [Rumble](http://rumbledb.org).
+Most examples also run smoothly on [Rumble](http://rumbledb.org).
 
 Important comments on the sandbox:
 
