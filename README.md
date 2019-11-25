@@ -3,7 +3,7 @@ This tutorial introduces the JSONiq language, which declaratively manipulates JS
 
 You can try the examples on a local [Zorba](http://zorba.io) installation. Most examples also run smoothly on [Rumble](http://rumbledb.org).
 
-Important comments on the sandbox:
+Important comments on the Zorba sandbox, in case you use it:
 
 - You will need to add
 
