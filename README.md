@@ -430,7 +430,7 @@ Do you remember SQL's SELECT FROM WHERE statements? JSONiq inherits selection, p
 
 ### Access external data
 
-Many implementations support collections of (and indices on) JSON objects or arrays:
+Many implementations support collections of (and indices on) JSON objects or arrays. Rumble reads input through json-file(), parquet-file(), json-doc(), text-file() as well as structured-json-doc().
 
     collection("data")
     -> { "foo" : "Your" }
