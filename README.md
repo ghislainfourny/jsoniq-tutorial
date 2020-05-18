@@ -5,7 +5,7 @@ You can try the examples on a local [Zorba](http://zorba.io) installation. They 
 
 ## Interactive version (Rumble)
 
-This tutorial is also available as a [Jupyter notebook](https://github.com/ghislainfourny/jsoniq-tutorial/blob/master/JSONiq-tutorial.ipynb) that can be set up with just a few easy steps.
+This tutorial is also available as a [Jupyter notebook](https://github.com/ghislainfourny/jsoniq-tutorial/blob/master/JSONiq-tutorial.ipynb) that can be set up with just a few easy steps. In order to be able this notebook (and have all the necessary software installed), we recommend installing [Anaconda](https://www.anaconda.com) to take care of this automatically. It is a popular data science software package with all you need.
 
 ## Zorba sandbox
 
