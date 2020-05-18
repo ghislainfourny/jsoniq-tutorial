@@ -5,7 +5,7 @@ You can try the examples on a local [Zorba](http://zorba.io) installation. They 
 
 ## Interactive version (Rumble)
 
-This tutorial is also available as a [Jupyter notebook]](https://github.com/ghislainfourny/jsoniq-tutorial/blob/master/JSONiq-tutorial.ipynb) that can be setup with just a few easy steps.
+This tutorial is also available as a [Jupyter notebook](https://github.com/ghislainfourny/jsoniq-tutorial/blob/master/JSONiq-tutorial.ipynb) that can be setup with just a few easy steps.
 
 ## Zorba sandbox
 
