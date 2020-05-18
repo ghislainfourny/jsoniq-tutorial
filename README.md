@@ -1,6 +1,10 @@
 # JSONiq for JSON users
 This tutorial introduces the JSONiq language, which declaratively manipulates JSON data.
 
+## Interactive version
+
+This tutorial is also available as a [Jupyter notebook]](https://github.com/ghislainfourny/jsoniq-tutorial/blob/master/JSONiq-tutorial.ipynb) that can be setup with just a few easy steps.
+
 You can try the examples on a local [Zorba](http://zorba.io) installation. Most examples also run smoothly on [Rumble](http://rumbledb.org).
 
 Important comments on the Zorba sandbox, in case you use it:
