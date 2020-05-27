@@ -9,7 +9,7 @@ A user-friendly display of the tutorial is located [here](https://nbviewer.jupyt
 
 You can also download the tutorial, which is a Jupyter notebook, from [here](https://github.com/ghislainfourny/jsoniq-tutorial/blob/master/JSONiq-tutorial.ipynb) and set it up on your machine with just a few easy steps, so that you can execute the queries yourself and even change them or enter your own. Instructions on how to do so are included in the notebook (you can also see them on the static version).
 
-If you choose to download and run this notebook (and have all the necessary software installed), we recommend installing [Anaconda](https://www.anaconda.com) to take care of this automatically. It is a popular data science software package with all you need: Jupyter notebooks, Python and Spark.
+If you choose to download and run this notebook, we recommend installing [Anaconda](https://www.anaconda.com) to take care of the installation of needed software automatically. It is a popular data science software package with in particular: Jupyter notebooks, Python and Spark.
 
 ## Zorba
 
