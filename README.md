@@ -1,7 +1,7 @@
 # JSONiq for JSON users
 This tutorial introduces the JSONiq language, which declaratively manipulates JSON data.
 
-The tutorial is [here](https://github.com/ghislainfourny/jsoniq-tutorial/blob/master/JSONiq-tutorial.ipynb). It is a Jupyter notebook that you can simply view (just by clicking the link), but you can also download it and set it up with just a few easy steps, so that you can execute the queries yourself and even change them or enter your own.
+The tutorial is [here](https://nbviewer.jupyter.org/github/ghislainfourny/jsoniq-tutorial/blob/master/JSONiq-tutorial.ipynb). It is a Jupyter notebook that you can simply view (just by clicking the link), but you can also download it instead from [here](https://nbviewer.jupyter.org/github/ghislainfourny/jsoniq-tutorial/blob/master/JSONiq-tutorial.ipynb) and set it up with just a few easy steps, so that you can execute the queries yourself and even change them or enter your own.
 
 If you choose to download and run this notebook (and have all the necessary software installed), we recommend installing [Anaconda](https://www.anaconda.com) to take care of this automatically. It is a popular data science software package with all you need.
 
