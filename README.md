@@ -3,7 +3,7 @@ This tutorial introduces the JSONiq language, which declaratively manipulates JS
 
 # Static version
 
-A user-friendly display of the tutorial is located [here](https://nbviewer.jupyter.org/github/ghislainfourny/jsoniq-tutorial/blob/master/JSONiq-tutorial.ipynb), if you just want to take a look with no setup.
+A user-friendly display of the tutorial is located [here](https://nbviewer.jupyter.org/github/ghislainfourny/jsoniq-tutorial/blob/master/JSONiq-tutorial.ipynb), if you just want to take a look with no setup: just ignore the instructions and scroll your way down.
 
 # Interactive version
 
