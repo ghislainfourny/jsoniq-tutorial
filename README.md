@@ -7,7 +7,7 @@ It was moved to an interactive, live tutorial that can be found [here](https://c
 
 # Static version
 
-A user-friendly display of the tutorial is located [here](https://nbviewer.jupyter.org/github/ghislainfourny/jsoniq-tutorial/blob/master/JSONiq-tutorial.ipynb), if you just want to take a look with no setup: just ignore the instructions and scroll your way down.
+A user-friendly display of the tutorial is located [here](https://nbviewer.jupyter.org/github/RumbleDB/rumble/blob/master/RumbleSandbox.ipynb), if you just want to take a look with no setup: just ignore the instructions and scroll your way down.
 
 # Running JSONiq on your own laptop or cluster
 
