@@ -31,7 +31,7 @@ The jsoniq package contains RumbleDB running on top of pyspark. It can be used o
 
 # Running JSONiq on your own laptop or cluster
 
-You can also install RumbleDB to your laptop, or use it on a large cluster (Amazon EMR, Azure HDInsight, Google Cloud...). The documentation is [here](https://rumble.readthedocs.io/en/latest/Getting%20started/).
+You can also install RumbleDB to run on the command line on your laptop or on a large cluster (Amazon EMR, Azure HDInsight, Google Cloud...). The documentation is [here](https://rumble.readthedocs.io/en/latest/Getting%20started/).
 
 ## Zorba
 
