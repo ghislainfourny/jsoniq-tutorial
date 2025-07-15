@@ -11,7 +11,7 @@ A user-friendly display of the tutorial is located [here](https://nbviewer.jupyt
 
 # New: JSONiq for Python!
 
-You can run JSONiq queries in Python with our [jsoniq package](https://pypi.org/project/jsoniq/) (Java 17 or 21 required with SPARK_HOME correctly set) with this simple install command:
+You can run JSONiq queries in Python with our [jsoniq package](https://pypi.org/project/jsoniq/) (Java 17 or 21 required with JAVA_HOME correctly set) with this simple install command:
 
 ```
 pip install jsoniq
